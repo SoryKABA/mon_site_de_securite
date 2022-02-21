@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid.header{
+    height: 90vh;
+    background: url('../images/heact.jpg');
+    fill-opacity: 0.6;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.child.fixed {
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #fdfdfd;
+    /* transition: background-color 0.3s; */
+    position: fixed;
+}
+div.container-fluid{
+    border-bottom: 2px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    height: 8vh;
+}
+div.container-fluid .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.container-fluid > .list >.list-item{
+    list-style: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+div.container-fluid > .list >.list-item a{
+    text-decoration: none;
+    color: #fff;
+}
+div.container-fluid > .list >.list-item.active,
+div.container-fluid > .list >.list-item:hover {
+    background: #f70;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.logo{
+    height: 8vh;
+    width: 8vw;
+    font-size: 10px;
+    color: #fcfcfc;
+    margin: -10px 35px;
+}
+.logo .bg{
+    width: 80%;
+    height: 50%;
+    font-size: 25px;
+}
+.logo .bg-danger{
+    color: #fb0;  
+}
+.logo .bg-primary{
+    color: #fdfdfd;
+}
+.logo > p{
+    margin-left: -15px;
+    margin-top: -4px;
+}
+.container-fluid > .icon{
+    width: 50px;
+    height: 6vh;
+    background: #022;
+    display: none;
+}
+.container-fluid > .icon .fas{
+    font-size: 35px;
+    margin: 5px 5px;
+    color: #fefefe;
+}
+header div.container {
+    color: #fdfdfd;
+    width: 40vw;
+    height: 30vh;
+    transform: translate(15%, 50%);
+    padding: 50px;
+    border: 1px solid black;
+    font-size: 2px;
+}
+.container h1.fs-5 {
+    font-size: 3rem;
+}
+header div.container p{
+    font-size: 1.3rem;
+}
+header div.container p > span{
+    transform: translate(100px);
+}
+header div.container button{
+    width: 8vw;
+    height: 6vh;
+    border-radius: 15px;
+    background: linear-gradient(to right, #f60, #fc0);
+    border: none
+}
+header div.container button:hover{
+    background: #e70;
+    opacity: 0.6;
+    transition: opacity .3s;
+}
+header div.container button a{
+    text-decoration: none;
+    color: #ffe;
+    font-size: 1.2rem;
+}

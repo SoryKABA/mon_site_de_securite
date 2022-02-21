@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    width: 100%;
+    font-size: 1.5px;
+}
+.container {
+    width: 95vw;
+    margin: auto 130px;
+    font-size: 12px;
+}
+.row.container.tab{
+    width: 80vw;
+}
+/* .text-wrap {
+    font-size: 7em;
+} */
+.para{
+    font-size: 15px;
+}
+.col-4 {
+    width: 23vw;
+}
+.card{
+    font-size: 3px;
+}
+.card-text {
+    font-size: 4em;
+    text-align: center;
+}
+/* .col-md-6 {
+    width: 35vw;
+} */
+.text-wrap-none {
+    font-size: 3.4em;
+}
+.btn-primary{
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.col-md-4 .btn-primary {
+    margin: 5px 40px;
+}
+.col-md-6 .btn-primary {
+    margin: 5px 80px;
+}
+.btn-primary > a{
+    color: #fef;
+    text-decoration: none;
+    font-size: 12px;
+}
+.card-img-top.img {
+    height: 31vh;
+}
+/* #img {
+    height: 39vh;
+} */
+.fs-5{
+    color: #f50;
+    text-align: center;
+}
+.paragraph {
+    color: #eff;
+    font-size: 13px;
+}
+.col-12.mx-1 {
+    /* width: 18vw; */
+    background-color: rgba(21, 21, 82, 0.7);
+    border: 2px solid rgba(21, 21, 82, 0.7);
+    border-radius: 10px;
+}
+.icon i.fa-2x {
+    line-height: 10;
+    width: 10vw;
+    height: auto;
+    color: #f70;
+}
+.btn-lien {
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background: #f70;
+    margin: auto 30px;
+}
+.btn-lien > a{
+    color: #fef;
+    text-decoration: none;
+    font-size: 12px;
+}
+.text-wrap.text{
+    font-size: 15px;
+    text-align: center;
+    opacity: .8;
+    word-wrap: break-word;
+}
+.container.secteur,
+.container.image{
+    width: 100%;
+    margin: auto 0px;
+}
+
+.container-fluid.secteur{
+    width: 70vw;
+}
+.row.container.g-3,
+.container.vision{
+    width: 100%;
+    margin: 0% 7%;
+    color: #eff;
+}
+.container.mission {
+    width: 70vw;
+    padding: 0px;
+    height: 75vh;
+    background-image: url('../images/pexel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* @media (max-width <= 768){
+    .container-fluid {
+        width: 100%;
+        font-size: 1.5px;
+    }
+    .row.container.tab{
+        width: 100%;
+    }
+} */
+/* .activity .container{
+    transform: translate(10%);
+} */
+.container-fluid.activity  div.onglet {
+    display: none;
+}
+.button:hover div.onglet {
+    display: block;
+    box-shadow: 0 0 2px #ccc;
+    padding: 1rem 2rem;
+    background: rgba(240, 230, 230, 0.6);
+    width: 80%;
+    border: 1px solid rgba(21, 21, 82, 0.7);
+}
