@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    /* background-color: #b9b5b5; */
+    background: url('../../images/nantes.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.FormInscription {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    border-radius: 5px;
+    border-top: 5px solid #46cb49;
+    border-bottom: 5px solid #46cb49;
+    box-shadow: 0 0 10px #000;
+}
+.form-text {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.form-saisie span {
+    font-size: 14px;
+    font-weight: bold;
+}
+#form-saisie {
+    height: 90vh;
+}
+.form-saisie input {
+    font-size: 16px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.form-saisie input[type="submit"].btnInscris {
+    width: 100%;
+    font-size: 18px;
+    background-color: #46cb49;
+    color: #fff;
+    margin: 200x 0;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.form-saisie input[type="submit"].btnInscris:hover {
+    background-color: #58cb5a;
+    color: #ececf0;
+}
+.form-saisie a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1d4adb;
+}
+
+/* Le côté de connexion */
+.FormConnexion{
+    width: 80vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    border-radius: 5px;
+    border-top: 5px solid #1d4adb;
+    border-bottom: 5px solid #1d4adb;
+    box-shadow: 0 0 10px #000;
+}
+.form-saisie.container {
+    width: 80vw;
+    height: 50vh;
+}
+.form-saisie input[type="submit"].btnConn {
+    width: 50%;
+    font-size: 18px;
+    background-color: #144adb;
+    color: #fff;
+    margin: 209x 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.form-saisie input[type="submit"].btnConn:hover {
+    background-color: #2652df;
+    color: #ececf0;
+}
