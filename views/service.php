@@ -11,7 +11,7 @@
 </head>
 <body>
     <div>
-        <?php include('menu.php'); ?>
+        <?php include('../header_footer/header.php'); ?>
         <link rel="stylesheet" href="../header_footer/style.css">
     </div>
     <div class="container fs-1 fw-bold text-uppercase text-center">Services</div>
@@ -126,9 +126,9 @@
             </div>
         </div>
     </section>
-    <script src="menu.js"></script>
     <div>
         <?php include('footer.php'); ?>
     </div>
+    <script src="../header_footer/header.js"></script>
 </body>
 </html>

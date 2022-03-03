@@ -31,7 +31,7 @@ div.container-fluid .list{
     flex-direction: row;
     justify-content: space-evenly;
 }
-div.container-fluid > .list >.list-item{
+div.container-fluid > .list >.list-item, .list-items{
     list-style: none;
     font-size: 20px;
     margin-right: 20px;
@@ -44,6 +44,11 @@ div.container-fluid > .list >.list-item.active,
 div.container-fluid > .list >.list-item:hover {
     background: #f70;
     transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+div.container-fluid > .list >#media {
+    background: #f70;
+    /* transition: background .5s ease-in-out; */
     border-radius: 5px;
 }
 .logo{
@@ -113,4 +118,46 @@ header div.container button a{
     text-decoration: none;
     color: #ffe;
     font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+    header .container-fluid.child 
+    {
+        width: 100%;
+    }
+    /* header .container-fluid.child 
+    {
+        font-size: 15px;
+    } */
+    header .container-fluid.child > ul 
+    {
+        display: none;
+    }
+    header .container-fluid.child > ul.list 
+    {
+        display: block;
+        margin: 42px;
+        font-size: 12px;
+        background: #333333;
+    }
+    header .container-fluid.child > div.icon 
+    {
+        display: block;
+        margin: -10px 10px;
+    }
+    header .container p {
+        font-size: 15px;
+    }
+    .logo{
+        height: 7vh;
+        width: 20vw;
+    }
+    .logo .bg {
+        height: 30%;
+    }
+    div.container-fluid {
+        height: 20vh;
+    }
+    div.container-fluid > ul.list >.list-item.media {
+        display:none;
+    }
 }

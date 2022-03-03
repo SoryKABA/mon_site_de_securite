@@ -12,10 +12,10 @@
 </head>
 <body>
     <div>
-        <?php include('menu.php');?>
+        <?php include('../header_footer/header.php'); ?>
         <link rel="stylesheet" href="../header_footer/style.css">
     </div>
-    <div class="container bg-danger text-white fw-normal">
+    <div class="container bg-danger text-white fw-normal rounded w-50 my-2">
         <?php
             if (!empty($errors)) {
                 foreach ($errors as $li) {
@@ -25,6 +25,17 @@
                         </ul>
                     <?php
                 }  
+            }
+        ?>
+    </div>
+    <div class="container bg-success w-50 my-3">
+        <?php
+            if (!empty($messageResponse)) {
+                ?>
+                    <p class="text-center fw-bold text-white">
+                        <?= $messageResponse; ?>
+                    </p>
+                <?php
             }
         ?>
     </div>
@@ -52,11 +63,11 @@
                         </p>
                     </div>
                     <div class="mb-2 p-3 bg-white">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="form_control">
                             <div class="row g-3">
                                 <div class="col-12">
                                     <label for="" class="form-label">Sujet</label>
-                                    <input type="text" name="sujet" class="form-control">
+                                    <input type="text" name="sujet" class="form-control" id="subject">
                                 </div>
                             </div>
                             <div class="row g-3">
@@ -86,19 +97,19 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <label for="" class="form-label">Vos besoins ?</label>
-                                    <select name="selectionne" id="" class="form-select">
+                                    <select name="selectionne" class="form-select">
                                         <option selected>Veuillez selectionner un besoin</option>
                                         <option value="filtre">Filtre</option>
-                                        <option value="gardiennage">Gardiennage & Surveillance</option>
-                                        <option value="gestion">Gestion du trafic & alarme</option>
-                                        <option value="intervention">Intervention & ronde</option>
+                                        <option value="gardiennage">Gardiennage et Surveillance</option>
+                                        <option value="gestion">Gestion du trafic et alarme</option>
+                                        <option value="intervention">Intervention et ronde</option>
                                         <option value="securite">Sécurité incendie (SSIAP)</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row g-3">
                                 <label for="" class="form-label">Message</label>
-                                <textarea name="message" id="" class="form-control"></textarea>
+                                <textarea name="message" id="message" class="form-control"></textarea>
                             </div> 
                             <div class="d-grid gap-2">
                                 <div class="col-12 d-grid gap-3 my-3">
@@ -114,6 +125,6 @@
     <div>
         <?php include('footer.php'); ?>
     </div>
-    <script src="menu.js"></script>
+    <script src="../header_footer/header.js"></script>
 </body>
 </html>

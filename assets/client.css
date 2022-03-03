@@ -1,0 +1,9 @@
+.container.w-75 {
+    float: right;
+    height: 85vh;
+    overflow: scroll;
+}
+div.container.w-75.my-5 {
+    float: right;
+    height: 70vh;
+}

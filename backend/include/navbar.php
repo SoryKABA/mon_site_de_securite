@@ -16,7 +16,7 @@
                     <a href="" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Déconnecter</a>
+                    <a href="../actions/logoutAction.php" class="nav-link">Déconnecter</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">

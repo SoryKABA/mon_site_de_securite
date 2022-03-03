@@ -122,26 +122,15 @@
     background-size: cover;
     background-position: center;
 }
-/* @media (max-width <= 768){
-    .container-fluid {
-        width: 100%;
-        font-size: 1.5px;
-    }
-    .row.container.tab{
-        width: 100%;
-    }
-} */
-/* .activity .container{
-    transform: translate(10%);
-} */
 .container-fluid.activity  div.onglet {
     display: none;
 }
-.button:hover div.onglet {
+div.onglet.active {
     display: block;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow: 0px 0px 2px #ccc;
     padding: 1rem 2rem;
-    background: rgba(240, 230, 230, 0.6);
     width: 80%;
     border: 1px solid rgba(21, 21, 82, 0.7);
+    background: rgba(240, 230, 230, 0.6);
+    font-size: 15px;
 }

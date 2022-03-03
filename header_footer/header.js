@@ -1,4 +1,8 @@
 (function () {
+    let icon = document.querySelector('.icon i.fas')
+    icon.addEventListener('click', function(){
+        document.querySelector('ul.list.active').classList.toggle('active')
+    })
     let list = document.querySelectorAll('.child .list > .list-item')
     for (let i = 0; i < list.length; i++) {
         let li = list[i]
@@ -19,16 +23,13 @@
     // fake.style.width = rect.width
     // fake.style.height = rect.height
     let width = rect.width
+    console.log(top)
     let onScroll = function () {
-        let hasScroll = element.classList.contains('fixed')
-        console.log(hasScroll)
+        let hasScroll = element.classList.contains('fixed')        
         if (scrollY() > top && !hasScroll) {
-            console.log(element)
             element.classList.add('fixed')
             element.style.width = rect.width + "px"
-            // element.parentNode.insertBefore(fake, element)
-            // element.style.transition = " .3s ease-in-out"
-            // console.log('add')
+            
             
         }else if(scrollY() < top && hasScroll){
             element.classList.remove('fixed')
