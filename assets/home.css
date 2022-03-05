@@ -12,7 +12,7 @@
     font-size: 12px;
 }
 .row.container.tab{
-    width: 80vw;
+    width: 100vw;
 }
 /* .text-wrap {
     font-size: 7em;
@@ -133,4 +133,42 @@ div.onglet.active {
     border: 1px solid rgba(21, 21, 82, 0.7);
     background: rgba(240, 230, 230, 0.6);
     font-size: 15px;
+}
+@media (max-width: 800px) {
+    div.container.mission {
+        width: 100%;
+        height: 150vh;
+    }
+    section.container-fluid.presentation,
+    section.container-fluid.team {
+        width: 95%;
+        border: 1px solid #000;
+    }
+    section.container-fluid.row.tab {
+        width: 100%;
+    }
+    section.container-fluid.row.tab > div.col-12 {
+        width: 100%;
+    }
+    div.container.mission > .row.container.g-3 > .col-12.mx-1 {
+        width: 80%;
+        height: 43vh;
+        box-sizing: border-box;
+        padding: 0px;
+        /* display: none; */
+    }
+    .text-wrap.paragraph {
+        font-size: 12px;
+        text-align: center;
+    }
+    .text-wrap.text-center {
+        text-align: left;
+    }
+    .icon i.fa-2x {
+        width: 5vw;
+        margin: -50px;
+    }
+    .btn-lien {
+        margin: auto 100px;
+    }
 }
