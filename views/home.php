@@ -25,7 +25,7 @@
             <div class="col-12 col-md-5">
                 <h2 class="fs-3 bg-danger text-white fw-bold text-uppercase">Qui sommes-nous ?</h2>
                 <p class="text-wrap para">
-                    Loire sanous sécurité est une entreprise privée de prévention, 
+                    <strong class="text-uppercase"><i>Loire sanous sécurité</i></strong> est une entreprise privée de prévention, 
                     gardiennage et de sécurité des personnes et des biens. 
                     Elle met à votre disposition son savoir-faire et son expérience 
                     pour couvrir tous besoins en matières de sécurité <a href="about.php">lire la suite ...</a>
@@ -40,7 +40,7 @@
             <div class="col-12 col-md-5 offset-md-1">
                 <h2 class="fs-3 bg-danger text-white fw-bold text-uppercase">Nos équipes</h2>
                 <p class="text-wrap para">
-                    Loire Sanous Sécurité met à vos services une équipe de professionnels 
+                    <strong class="text-uppercase"><i>Loire Sanous Sécurité</i></strong> met à vos services une équipe de professionnels 
                     qualifiés en fonction de votre demande. Tous nos agents ont la carte 
                     professionelle et se conforment au respect des dispositions 
                     législatives et réglementaires, notamment les activités privées de sécurité.
@@ -134,20 +134,39 @@
                             FILTRAGE
                         </div>
                         <button class="btn-primary button" data-tabtitle="0">
-                            <a href="#">Voir plus</a>
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                   aria-controls="infoProjet1">Voir plus</a>
                         </button>
-                        <div id="tab0" class="onglet active">
-                            <p class="fw-light text-wrap fs-3">
-                                <h4 class="fw-bold text-danger text-start">FILTRE</h4>
-                                - Contrôle d'accès et de sorties <br>
-                                - Agent de sécurité et la gestion des visiteurs du site : 
-                                  identité, badges, clés, ouvertures de barrières / porte,
-                                  orientation des visiteurs
-                            </p>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1" aria-labelledby="titelProjet1">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet1">
+                                    <h4 class="fw-bold text-danger text-start">FILTRAGE</h4>
+                                </h5>
+                                <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container w-100 h-100">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fw-light text-wrap fs-2">
+                                                Contrôle d’accès et de sorties Accueil 
+                                                et la gestion des visiteurs du site : 
+                                                Avec des moyens à disposition : Badges, clés 
+                                                pour l’ouverture de barrières/portes, orientation 
+                                                des visiteurs N’exécute des consignes en provenance 
+                                                d’un tiers qu’avec l’approbation de sa hiérachie
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <img src="../images/filtre.jpg" alt="" class="img-fluid rounded shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div>                  
                 </div>
-                </div>
+            </div>
             <div class="col-12 col-md-4 col-sm-12">
                 <div class="card">
                     <img src="../images/alar.jpg" class="card-img-top" alt="...">
@@ -156,16 +175,33 @@
                             GESTION DU TRAFIC ET ALARME
                         </div>
                         <button class="btn-primary button" data-tabtitle="1">
-                            <a href="#">Voir plus</a>
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#infoProjet2"
+                   aria-controls="infoProjet2">Voir plus</a>
                         </button>
-                        <div id="tab1" class="onglet">
-                            <p class="fw-light text-wrap fs-3">
-                                <h4 class="fw-bold text-danger text-start">GESTION DU TRAFIC & ALARME</h4>
-                                - Maintien de la fluidité et de sécurité du trafic interne du site <br>
-                                - Faire respecter les normes ou consignes de circulation et de stationnement <br>
-                                - Orientation des visiteurs <br>
-                                - Installation des alarmes
-                            </p>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2" aria-labelledby="titelProjet2">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet2">
+                                    <h4 class="fw-bold text-danger text-start">GESTION DU TRAFIC ET ALARME</h4>
+                                </h5>
+                                <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container w-100 h-100">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fw-light text-wrap fs-2">
+                                                Maintien de la fluidité et sécurité du trafic 
+                                                interne du site Faire respecter les normes ou 
+                                                consignes de circulation et de stationnement Orientation 
+                                                des visiteurs Installation d'alarme
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <img src="../images/alar.jpg" alt="" class="img-fluid rounded shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,16 +214,39 @@
                             GESTION ET GARDIENNAGE
                         </div>
                         <button class="btn-primary button" data-tabtitle="2">
-                            <a href="#">Voir plus</a>
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#infoProjet3"
+                   aria-controls="infoProjet3">Voir plus</a>
                         </button>
-                        <div id="tab2" class="onglet">
-                            <p class="fw-light text-wrap fs-3">
-                                <h4 class="fw-bold text-danger text-start">GARIDENNAGE &  SURVEILLANCE</h4>
-                                - Surveillance de magasin : Arrière caisse <br>
-                                - Surveillance de sites industriels, chantiers, entreprises, banques, ERP, IGH,
-                                sociétés de service, télésurveillance ... <br>
-                                - Traitement des anomalies et rapports ... 
-                            </p>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3" aria-labelledby="titelProjet3">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet3">
+                                    <h4 class="fw-bold text-danger text-start">GESTION ET GARDIENNAGE</h4>
+                                </h5>
+                                <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container w-100 h-100">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fw-light text-wrap fs-3">
+                                                Surveiller les lieux S’assurer du respect 
+                                                des procédures de sécurité Surveiller et contrôler 
+                                                les entrées et sorties des personnes et des véhicules 
+                                                Maintenir l’ordre et prévoir tout comportement hostile, 
+                                                infraction ou vol de biens Faire appliquer les réglements 
+                                                de sécurité en vigueur dans l’établissement Exécuter des rondes 
+                                                des fréquences de nuit et jour et rédiger des rapports. Tenir la 
+                                                main courante à jour et les registres récapitulant les mouvements 
+                                                des personnels et de tous les incidents sur vous sur le site et les 
+                                                mettre à dispositiondu responsable technique du site
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <img src="../images/agent.png" alt="" class="img-fluid rounded shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,21 +261,34 @@
                                 INTERVENTION ET RONDES
                             </div>
                             <button class="btn-primary button" data-tabtitle="3">
-                                <a href="#">Voir plus</a>
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#infoProjet4"
+                   aria-controls="infoProjet4">Voir plus</a>
                             </button>
-                            <div id="tab3" class="onglet">
-                                <p class="fw-light text-wrap fs-3">
-                                    <h4 class="fw-bold text-danger text-start">INTERVENTION & RONDES</h4>
-                                    - Protection de sites <br>
-                                    - Intervention SSI <br>
-                                    - Sécurité incendie <br>
-                                    - Mission d'urgence et évacuation <br>
-                                    - Postes alarmes, les ERP et les IGH <br>
-                                    - Rondes de surveillance <br>
-                                    - Prévention contre le vol <br>
-                                    - Contrôle des fermetures des issues
-                                </p>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4" aria-labelledby="titelProjet4">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet4">
+                                    <h4 class="fw-bold text-danger text-start">INTERVENTION ET RONDES</h4>
+                                </h5>
+                                <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
+                            <div class="offcanvas-body">
+                                <div class="container w-100 h-100">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <p class="fw-light text-wrap fs-2">
+                                                Protection de sites Intervention SSI Sécurité 
+                                                incendie Missions d’urgence et évaluation Postes 
+                                                alarmes, les ERP et les IGH Rondes de surveillance 
+                                                Prévention contre le vol Contrôle de fermetures des issues
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <img src="../images/intervention.jpg" alt="" class="img-fluid rounded shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -228,20 +300,35 @@
                                 SECURITE INCENDIE (SSIAP)
                             </div>
                             <button class="btn-primary button" data-tabtitle="4">
-                                <a href="#">Voir plus</a>
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#infoProjet5"
+                   aria-controls="infoProjet5">Voir plus</a>
                             </button>
-                            <div id="tab4" class="onglet">
-                                <p class="fw-light text-wrap fs-3">
-                                    <h4 class="fw-bold text-danger text-start">SECURITE INCENDIE</h4>
-                                    - La prévention des incendies <br>
-                                    - L'alerte et l'accueil des secours <br>
-                                    - L'assistance aux personnes <br>
-                                    - Le management de l'équipe de sécurité <br>
-                                    - La prévision technique encadrée par les règlements de sécurité <br>
-                                    - Le management du service de sécurité incendie <br>
-                                    - Le conseil du chef d'établissement en matière de sécurité incendie <br>
-                                    - L'organisation des secours internes ... 
-                                </p>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet5" aria-labelledby="titelProjet5">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet5">
+                                        <h4 class="fw-bold text-danger text-start">SECURITE INCENDIE (SSIAP)</h4>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="container w-100 h-100">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <p class="fw-light text-wrap fs-2">
+                                                    La prévention des incendies, l’alerte et l’accueil des 
+                                                    secours,. L’assistance aux personnes, le management de 
+                                                    l’équipe de sécurité. La prévision technique encadrée par 
+                                                    les règlements de sécurité. La management du service de 
+                                                    sécurité incendie. Le conseil du chef d’établissement en 
+                                                    matière de sécurité incendie, l’organisation des secours interne
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <img src="../images/sec.jpg" alt="" class="img-fluid rounded shadow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

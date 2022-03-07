@@ -20,7 +20,7 @@ if (isset($_POST['valide'])) {
 
     $errors = [];
 
-    if (empty($sujet) || !preg_match("/^[a-zA-Z0-9_éèêëàâäîïùç'\ ]+$/", $sujet)) {
+    if (empty($sujet) || !preg_match("/^[a-zA-Z0-9_éèêëàâäîïùç,.!-_;:?'\ ]+$/", $sujet)) {
         $errors['sujet'] = "Le champ sujet ne doit pas être, si c'est pas le cas, 
         veuillez vérifier que vous n'ayez pas mis un caractère non accepté par le système";
     }
@@ -41,7 +41,7 @@ if (isset($_POST['valide'])) {
     }
     if (empty($selectionne) || $selectionne == "Veuillez selectionner un besoin") {
         $errors['selectionne'] = "Le champ Vos besoins ne doit pas être vide, vous devez selectionner un besoin";
-    }if (empty($message) || !preg_match("/^[a-zA-Z0-9_éèêëàâäîïùç'\ ]+$/", $message)) {
+    }if (empty($message) || !preg_match("/^[a-zA-Z0-9_éèêëàâäîïùç,.!-_;:?'\ ]+$/", $message)) {
         $errors['message'] = "Le champ message ne doit pas être vide, 
         veuillez écrire quelque chose de compréhensible ";
     }
